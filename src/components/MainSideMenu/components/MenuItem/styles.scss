@@ -1,8 +1,25 @@
 .menu-item-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   padding: 5px;
-  .menu-item-inner {
+  color: #fff;
+  cursor: pointer;
+
+  .menu-item-icon-wrapper {
+    padding: 0px 10px 0px 10px;
+
+    .menu-item-icon {
+      font-size: 16px;
+    }
+  }
+
+  .menu-item-title {
     font-weight: bold;
-    font-size: 14px;
-    color: #fff;
+    font-size: 16px;
+  }
+
+  &:hover {
+    color: #ffd55d; 
   }
 }
