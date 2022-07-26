@@ -3,7 +3,7 @@ import React from "react";
 // components
 import MenuItem from "../../components/MenuItem";
 // dataSources
-import mainSideMenuList from "../../../../dataSources/mainSideMenu";
+import mainSideMenuList from "@/dataSources/mainSideMenu";
 // others
 import "./styles.scss";
 

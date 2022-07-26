@@ -1,0 +1,16 @@
+.delete-action-button-wrapper {
+  margin-left: 20px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #e6e6e6;
+  border-width: 1px;
+  padding: 5px 10px 5px 10px;
+  font-size: 15px;
+  color: #dc3545;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ffc107;
+    color: #fff;
+  }
+}

@@ -1,0 +1,12 @@
+.status-wrapper-inner {
+  border-radius: 5px;
+  background: #008a00;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 11px;
+  color: #fff;
+
+  &.out {
+    background: #ffc107;
+  }
+}
