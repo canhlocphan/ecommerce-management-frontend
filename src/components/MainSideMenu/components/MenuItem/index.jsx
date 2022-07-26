@@ -1,16 +1,15 @@
 // libs
-import React from "react";
-import { UnorderedListOutlined } from "@ant-design/icons";
+import React from 'react';
 // others
-import "./styles.scss";
+import './styles.scss';
 
 const MenuItem = ({ title, icon }) => (
-  <div className="menu-item-wrapper">
-    <div className="menu-item-icon-wrapper">
-      {icon}
+    <div className="menu-item-wrapper">
+      <div className="menu-item-icon-wrapper">
+        {icon}
+      </div>
+      <div className="menu-item-title">{title}</div>
     </div>
-    <div className="menu-item-title">{title}</div>
-  </div>
-);
+  )
 
 export default MenuItem;

@@ -1,8 +1,9 @@
 // libs
 import React from "react";
-import { mainSideMenuList } from "../../../../dataSources/mainSideMenu";
 // components
 import MenuItem from "../../components/MenuItem";
+// dataSources
+import mainSideMenuList from "../../../../dataSources/mainSideMenu";
 // others
 import "./styles.scss";
 
