@@ -5,8 +5,10 @@ import { DeleteOutlined } from "@ant-design/icons";
 import "./styles.scss";
 
 const DeleteActionButton = () => (
-  <div className="delete-action-button-wrapper">
-    <DeleteOutlined />
+  <div>
+    <div className="delete-action-button-wrapper">
+      <DeleteOutlined />
+    </div>
   </div>
 );
 

@@ -4,8 +4,14 @@ import React from "react";
 import "./styles.scss";
 
 const Status = ({ status }) => (
-  <span className={status === 1 ? "status-wrapper-inner" : "status-wrapper-inner out"}>
-    {status === 0 ? "Out of stock" : "Business"}
+  <span
+    className={
+      status === "Business"
+        ? "status-wrapper-inner"
+        : "status-wrapper-inner out"
+    }
+  >
+    {status}
   </span>
 );
 
