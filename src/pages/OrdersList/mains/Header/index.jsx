@@ -1,8 +1,8 @@
 // libs
 import React, { useState } from "react";
 // components
-import AddCategorie from "../../components/AddCategorie";
 import HeaderSection from "../../components/HeaderSection";
+import AddCategorie from "../../components/AddCategorie";
 // others
 import "./styles.scss";
 
@@ -12,17 +12,11 @@ const Header = () => {
   const showModal = () => {
     setIsModalVisible(true);
   };
-  const handleOk = () => {
-    setIsModalVisible(false);
-  };
-  const handleCancel = () => {
-    setIsModalVisible(false);
-  };
 
   return (
     <div className="header-wrapper">
       <HeaderSection showModal={showModal} />
-      <AddCategorie {...{ isModalVisible, handleOk, handleCancel }} />
+      <AddCategorie {...{ isModalVisible, setIsModalVisible }} />
     </div>
   );
 };
