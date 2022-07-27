@@ -10,8 +10,8 @@ const StatusInput = ({ status, setStatus }) => (
         setStatus(value);
       }}
     >
-      <Select.Option value="business">Business</Select.Option>
-      <Select.Option value="out">Out of stock</Select.Option>
+      <Select.Option value="Business">Business</Select.Option>
+      <Select.Option value="Out of stock">Out of stock</Select.Option>
     </Select>
   </Form.Item>
 );

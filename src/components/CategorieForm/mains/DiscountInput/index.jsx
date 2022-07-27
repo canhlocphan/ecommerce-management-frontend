@@ -1,14 +1,16 @@
 // libs
 import React from "react";
-import { Form, Input } from "antd";
+import { Form, InputNumber } from "antd";
 
 const DiscountInput = ({ discount, setDiscount }) => (
   <Form.Item label="Discount" required>
-    <Input
-      value={discount}
+    <InputNumber
+      style={{ width: "100%" }}
+      defaultValue={discount}
+      controls={false}
       addonAfter="%"
-      onChange={(e) => {
-        setDiscount(e.target.value);
+      onChange={(value) => { 
+        setDiscount(value);
       }}
     />
   </Form.Item>

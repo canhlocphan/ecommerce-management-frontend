@@ -1,16 +1,22 @@
 // libs
 import React from "react";
 import { Table } from "antd";
+import { useSelector } from "react-redux";
 // dataSources
-import categorieList from "@/dataSources/categorieList";
 import orderListColumn from "@/dataSources/orderListColumn";
+// slices
+import { categories } from "@/slices/categoriesSlices";
 // others
 import "./styles.scss";
 
-const Body = () => (
-  <div className="body-wrapper">
-    <Table columns={orderListColumn} dataSource={categorieList} />
-  </div>
-);
+const Body = () => {
+  const categorieList = useSelector(categories);
+
+  return (
+    <div className="body-wrapper">
+      <Table columns={orderListColumn} dataSource={categorieList} />
+    </div>
+  );
+};
 
 export default Body;

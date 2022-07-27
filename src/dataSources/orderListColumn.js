@@ -42,7 +42,7 @@ const orderListColumn = [
     render: (_, record) => (
       <div style={{ display: "flex", flexDirection: "row" }}>
         <EditActionButton record={record} />
-        <DeleteActionButton />
+        <DeleteActionButton record={record} />
       </div>
     ),
   },
