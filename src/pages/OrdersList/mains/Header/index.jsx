@@ -1,9 +1,8 @@
 // libs
 import React, { useState } from "react";
-import AddCategorie from "../../components/AddCategorie";
 // components
-import HeaderTitle from "../../components/HeaderTitle";
-import InsertButton from "../../components/InsertButton";
+import AddCategorie from "../../components/AddCategorie";
+import HeaderSection from "../../components/HeaderSection";
 // others
 import "./styles.scss";
 
@@ -19,13 +18,10 @@ const Header = () => {
   const handleCancel = () => {
     setIsModalVisible(false);
   };
-  
+
   return (
     <div className="header-wrapper">
-      <div className="header-wrapper-inner">
-        <HeaderTitle title="Categorie List" />
-        <InsertButton title="Add categories" onClick={showModal} />
-      </div>
+      <HeaderSection showModal={showModal} />
       <AddCategorie {...{ isModalVisible, handleOk, handleCancel }} />
     </div>
   );

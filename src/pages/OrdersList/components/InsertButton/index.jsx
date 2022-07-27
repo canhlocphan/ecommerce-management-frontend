@@ -3,12 +3,12 @@ import React from "react";
 import { Button } from "antd";
 import { PlusCircleOutlined } from "@ant-design/icons";
 
-const InsertButton = ({ title, onClick }) => (
+const InsertButton = ({ title, showModal }) => (
   <Button
     type="primary"
     icon={<PlusCircleOutlined />}
     size={25}
-    onClick={onClick}
+    onClick={showModal}
   >
     {title}
   </Button>

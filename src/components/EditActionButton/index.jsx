@@ -21,12 +21,12 @@ const EditActionButton = ({ record }) => {
     setIsModalVisible(false);
   };
   return (
-    <div>
-      <div className="edit-action-button-wrapper" onClick={showModal}>  
+    <>
+      <div className="edit-action-button-wrapper" onClick={showModal}>
         <FormOutlined />
       </div>
       <EditCategorie {...{ isModalVisible, handleOk, handleCancel, record }} />
-    </div>
+    </>
   );
 };
 
