@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { FormOutlined } from "@ant-design/icons";
 // components
-import EditCategorie from "@/pages/OrdersList/components/EditCategorie";
+import EditCategorie from "@/pages/CategorieList/components/EditCategorie";
 // others
 import "./styles.scss";
 

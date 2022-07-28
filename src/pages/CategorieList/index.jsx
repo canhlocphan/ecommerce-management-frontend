@@ -6,9 +6,11 @@ import Header from "./mains/Header";
 // others
 import "./styles.scss";
 
-const OrdersList = () => <div className="orders-list-wrapper">
-  <Header />
-  <Body />
-</div>;
+const CategorieList = () => (
+  <div className="categorie-list-wrapper">
+    <Header />
+    <Body />
+  </div>
+);
 
-export default OrdersList;
+export default CategorieList;
