@@ -9,8 +9,8 @@ import "./styles.scss";
 
 const MenuList = () => (
   <div className="menu-list-wrapper">
-    {mainSideMenuList.map(({ title, icon }) => (
-      <MenuItem key={title} {...{title,icon}} />
+    {mainSideMenuList.map(({ title, icon, to }) => (
+      <MenuItem key={title} {...{ title, icon, to }} />
     ))}
   </div>
 );

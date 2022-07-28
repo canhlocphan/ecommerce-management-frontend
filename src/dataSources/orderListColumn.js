@@ -14,6 +14,7 @@ const orderListColumn = [
     title: "CATEGORIE",
     dataIndex: "categorie",
     key: "categorie",
+    onFilter: (value, record) => record.categorie.includes(value),
     render: (text) => <div style={{ fontWeight: "bold" }}>{text}</div>,
   },
   {

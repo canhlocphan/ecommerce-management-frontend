@@ -14,7 +14,11 @@ const Body = () => {
 
   return (
     <div className="body-wrapper">
-      <Table columns={orderListColumn} dataSource={categorieList} />
+      <Table
+        columns={orderListColumn}
+        dataSource={categorieList}
+        pagination={{ pageSize: 10 }}
+      />
     </div>
   );
 };

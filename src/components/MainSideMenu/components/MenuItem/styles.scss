@@ -6,6 +6,10 @@
   color: #fff;
   cursor: pointer;
 
+  &.activated {
+    color: #ffd55d;
+  }
+
   .menu-item-icon-wrapper {
     padding: 0px 10px 0px 10px;
     font-size: 20px;
