@@ -3,7 +3,7 @@ import React from "react";
 import { Table } from "antd";
 import { useSelector } from "react-redux";
 // dataSources
-import orderListColumn from "@/dataSources/orderListColumn";
+import categoriesColumn from "@/dataSources/categoriesColumn";
 // slices
 import { categories } from "@/slices/categoriesSlices";
 // others
@@ -15,7 +15,7 @@ const Body = () => {
   return (
     <div className="body-wrapper">
       <Table
-        columns={orderListColumn}
+        columns={categoriesColumn}
         dataSource={categorieList}
         pagination={{ pageSize: 10 }}
       />

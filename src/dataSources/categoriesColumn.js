@@ -4,7 +4,7 @@ import Price from "../components/Price";
 import EditActionButton from "../components/EditActionButton";
 import DeleteActionButton from "../components/DeleteActionButton";
 
-const orderListColumn = [
+const categoriesColumn = [
   {
     title: "ID",
     dataIndex: "id",
@@ -14,7 +14,6 @@ const orderListColumn = [
     title: "CATEGORIE",
     dataIndex: "categorie",
     key: "categorie",
-    onFilter: (value, record) => record.categorie.includes(value),
     render: (text) => <div style={{ fontWeight: "bold" }}>{text}</div>,
   },
   {
@@ -49,4 +48,4 @@ const orderListColumn = [
   },
 ]
 
-export default orderListColumn;
+export default categoriesColumn;

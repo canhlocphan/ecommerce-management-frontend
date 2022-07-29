@@ -6,7 +6,7 @@ import "./styles.scss";
 const Status = ({ status }) => (
   <span
     className={
-      status === "Business"
+      status === "Business" || status === "Paid"
         ? "status-wrapper-inner"
         : "status-wrapper-inner out"
     }

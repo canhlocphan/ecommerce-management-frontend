@@ -1,7 +1,7 @@
 // libs
 import React from "react";
 // components
-import HeaderTitle from "../HeaderTitle";
+import HeaderTitle from "@/components/HeaderTitle";
 import InsertButton from "../InsertButton";
 // others
 import "./styles.scss";
