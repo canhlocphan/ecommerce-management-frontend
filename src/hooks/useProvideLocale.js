@@ -3,23 +3,23 @@ import { useEffect, useState } from "react";
 // others
 import CONSTANTS from "@/constants";
 
-const { VI_VN } = CONSTANTS.LOCALE;
+const { EN_US } = CONSTANTS.LOCALE;
 
 const useProvideLocale = () => {
   const language = localStorage.getItem("language")
     ? JSON.parse(localStorage.getItem("language"))
-    : VI_VN;
+    : EN_US;
   const [locale, setLocale] = useState(language);
 
   useEffect(() => {
     if (locale) return;
-    setLocale(VI_VN);
+    setLocale(EN_US);
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return {
-    locale: locale || VI_VN,
+    locale: locale || EN_US,
     setLocale,
   };
 };
