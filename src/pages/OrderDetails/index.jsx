@@ -3,7 +3,7 @@ import React from "react";
 // components
 import OrderDetailsHeader from "./mains/OrderDetailsHeader";
 // hooks
-import { useRouter } from "@/hooks/useRouter";
+import useRouter from "@/hooks/useRouter";
 // dataSources
 import orderList from "@/dataSources/orderList";
 // others

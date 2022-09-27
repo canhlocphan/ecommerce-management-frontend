@@ -3,8 +3,6 @@ import React from "react";
 // components
 import Body from "./mains/Body";
 import Header from "./mains/Header";
-// others
-import "./styles.scss";
 
 const CategorieList = () => (
   <div className="categorie-list-wrapper">

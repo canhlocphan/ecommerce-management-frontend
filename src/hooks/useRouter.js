@@ -3,8 +3,7 @@ import { useMemo } from "react";
 import { useParams, useLocation, useNavigate } from "react-router-dom";
 import queryString from "query-string";
 
-// eslint-disable-next-line import/prefer-default-export
-export const useRouter = () => {
+const useRouter = () => {
   const params = useParams();
   const location = useLocation();
   const navigate = useNavigate();
@@ -34,3 +33,5 @@ export const useRouter = () => {
     };
   }, [location, navigate, params]);
 };
+
+export default useRouter;
