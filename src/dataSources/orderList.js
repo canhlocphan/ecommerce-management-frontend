@@ -8,6 +8,7 @@ const orderList = [
     date: "March 13, 2021",
     payment: "Momo",
     total: 30000,
+    action: "1"
   },
   {
     key: "2",
@@ -18,6 +19,7 @@ const orderList = [
     date: "March 13, 2021",
     payment: "Cash",
     total: 40000,
+    action: "2"
   },
   {
     key: "3",
@@ -28,6 +30,7 @@ const orderList = [
     date: "March 14, 2022",
     payment: "N/A",
     total: 50000,
+    action: "3"
   },
 ];
 

@@ -1,0 +1,11 @@
+.order-details-header-wrapper {
+  border-bottom: 1px solid #f8f9fa;
+  padding: 16px 0px 16px 0px;
+
+  &-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

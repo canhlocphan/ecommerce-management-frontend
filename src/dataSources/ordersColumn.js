@@ -1,9 +1,9 @@
 // libs
-import { Col, Row } from "antd";
+import { NavLink } from "react-router-dom";
 // components
 import Status from "../components/Status";
 import Price from "../components/Price";
-import OrderCategorieItem from "@/components/OrderCategorieItem";
+import Category from "@/components/Category";
 
 const ordersColumn = [
   {
@@ -15,24 +15,12 @@ const ordersColumn = [
     title: "CATEGORIES",
     dataIndex: "categories",
     key: "categories",
-    render: (_, { categories }) => (
-      <>
-        <Row className="order-categorie-item-wrapper">
-          <Col style={{ width: "120px" }} color="#0d6efd">Name</Col>
-          <Col color="#20c997">No.</Col>
-        </Row>
-        {categories.map(({ categorie, count }) =>
-        (
-          <OrderCategorieItem key={Math.random()} {...{ categorie, count }} />
-        )
-        )}
-      </>
-    ),
+    render: (_, { categories }) => <Category categories={categories} />
   },
   {
     title: "CUSTOMER NAME",
     dataIndex: "customer",
-    key: "customer"
+    key: "customer",
   },
   {
     title: "STATUS",
@@ -43,12 +31,12 @@ const ordersColumn = [
   {
     title: "DATE",
     key: "date",
-    dataIndex: "date"
+    dataIndex: "date",
   },
   {
     title: "PAYMENT INFO",
     key: "payment",
-    dataIndex: "payment"
+    dataIndex: "payment",
   },
   {
     title: "TOTAL PRICE",
@@ -56,7 +44,17 @@ const ordersColumn = [
     key: "total",
     sorter: (a, b) => a.total - b.total,
     render: (price) => <Price price={price} />,
-  }
-]
+  },
+  {
+    title: "ACTION",
+    dataIndex: "action",
+    key: "action",
+    render: (action) => (
+      <NavLink to={action}>
+        <div>Details</div>
+      </NavLink>
+    ),
+  },
+];
 
 export default ordersColumn;
